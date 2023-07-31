@@ -127,6 +127,7 @@ set(MICROPY_SOURCE_PORT
     machine_timer.c
     machine_uart.c
     machine_wdt.c
+    machine_dma.c
     main.c
     modmachine.c
     modrp2.c
@@ -157,6 +158,7 @@ set(MICROPY_SOURCE_QSTR
     ${MICROPY_PORT_DIR}/machine_timer.c
     ${MICROPY_PORT_DIR}/machine_uart.c
     ${MICROPY_PORT_DIR}/machine_wdt.c
+    ${MICROPY_PORT_DIR}/machine_dma.c
     ${MICROPY_PORT_DIR}/modmachine.c
     ${MICROPY_PORT_DIR}/modrp2.c
     ${MICROPY_PORT_DIR}/modos.c
