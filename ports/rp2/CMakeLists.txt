@@ -127,7 +127,6 @@ set(MICROPY_SOURCE_PORT
     machine_timer.c
     machine_uart.c
     machine_wdt.c
-    machine_dma.c
     main.c
     modmachine.c
     modrp2.c
@@ -135,6 +134,7 @@ set(MICROPY_SOURCE_PORT
     mpnetworkport.c
     mpthreadport.c
     pendsv.c
+    rp2_dma.c
     rp2_flash.c
     rp2_pio.c
     uart.c
@@ -158,10 +158,10 @@ set(MICROPY_SOURCE_QSTR
     ${MICROPY_PORT_DIR}/machine_timer.c
     ${MICROPY_PORT_DIR}/machine_uart.c
     ${MICROPY_PORT_DIR}/machine_wdt.c
-    ${MICROPY_PORT_DIR}/machine_dma.c
     ${MICROPY_PORT_DIR}/modmachine.c
     ${MICROPY_PORT_DIR}/modrp2.c
     ${MICROPY_PORT_DIR}/modos.c
+    ${MICROPY_PORT_DIR}/rp2_dma.c
     ${MICROPY_PORT_DIR}/rp2_flash.c
     ${MICROPY_PORT_DIR}/rp2_pio.c
     ${CMAKE_BINARY_DIR}/pins_${MICROPY_BOARD}.c
