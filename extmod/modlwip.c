@@ -716,9 +716,9 @@ STATIC mp_uint_t lwip_tcp_send(lwip_socket_obj_t *socket, const byte *buf, mp_ui
     }
 
     // If the output buffer is getting full then send the data to the lower layers
-    if (err == ERR_OK && tcp_sndbuf(socket->pcb.tcp) < TCP_SND_BUF / 4) {
-        err = tcp_output(socket->pcb.tcp);
-    }
+    //    if (err == ERR_OK && tcp_sndbuf(socket->pcb.tcp) < TCP_SND_BUF / 4) {
+    err = tcp_output(socket->pcb.tcp);
+    //    }
 
     MICROPY_PY_LWIP_EXIT
 
